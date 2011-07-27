@@ -1,0 +1,9 @@
+<classpath>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/com/googlecode/htmlcompressor/htmlcompressor/1.4/htmlcompressor-1.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/rhino/js/1.6R7/js-1.6R7.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/4.8.2/junit-4.8.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/yahoo/platform/yui/yuicompressor/2.4.6/yuicompressor-2.4.6.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+</classpath>

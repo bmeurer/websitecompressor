@@ -1,0 +1,12 @@
+WebsiteCompressor
+
+http://benediktmeurer.de/websitecompressor
+
+WebsiteCompressor is a small, fast and very easy to use Java utility that
+minifies a whole website, with all CSS, HTML, JavaScript and XML files by
+removing extra whitespaces, comments and other unneeded characters without
+breaking the content structure. As a result the pages become smaller in
+size and load faster.
+
+WebsiteCompressor is licensed under the Apache License 2.0. See the LICENSE
+file for details.
