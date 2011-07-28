@@ -18,9 +18,12 @@ import jargs.gnu.CmdLineParser;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintStream;
 import java.io.StringReader;
@@ -262,8 +265,8 @@ public class CmdLineCompressor {
 				if (compressor != null) {
 					// Read the input from the file
 					StringBuilder input = new StringBuilder();
-					FileReader fileReader = new FileReader(file);
-					BufferedReader reader = new BufferedReader(fileReader);
+					InputStream fileInputStream = new FileInputStream(file);
+					BufferedReader reader = new BufferedReader(new InputStreamReader(fileInputStream, charset));
 					try {
 						String line;
 						String lineSeparator = System.getProperty("line.separator");
@@ -274,7 +277,6 @@ public class CmdLineCompressor {
 					}
 					finally {
 						reader.close();
-						fileReader.close();
 					}
 					
 					// Compress the file content
