@@ -20,7 +20,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -63,6 +62,7 @@ public class CmdLineCompressor {
 	private static CmdLineParser.Option preserveIntertagSpacesOpt;
 	private static CmdLineParser.Option preserveLineBreaksOpt;
 	private static CmdLineParser.Option preserveMultiSpacesOpt;
+	private static CmdLineParser.Option preserveQuotesOpt;
 	private static CmdLineParser.Option preserveSemiOpt;
 	
 	private static String charset;
@@ -80,6 +80,7 @@ public class CmdLineCompressor {
 		preserveIntertagSpacesOpt = parser.addBooleanOption("preserve-intertag-spaces");
 		preserveLineBreaksOpt = parser.addBooleanOption("preserve-line-breaks");
 		preserveMultiSpacesOpt = parser.addBooleanOption("preserve-multi-spaces");
+		preserveQuotesOpt = parser.addBooleanOption("preserve-quotes");
 		preserveSemiOpt = parser.addBooleanOption("preserve-semi");
 
 		try {
@@ -162,6 +163,7 @@ public class CmdLineCompressor {
 			htmlCompressor.setRemoveIntertagSpaces(parser.getOptionValue(preserveIntertagSpacesOpt) == null);
 			htmlCompressor.setPreserveLineBreaks(parser.getOptionValue(preserveLineBreaksOpt) != null);
 			htmlCompressor.setRemoveMultiSpaces(parser.getOptionValue(preserveMultiSpacesOpt) == null);
+			htmlCompressor.setRemoveQuotes(parser.getOptionValue(preserveQuotesOpt) == null);
 			htmlCompressor.setYuiCssLineBreak(lineBreakPos);
 			htmlCompressor.setYuiJsDisableOptimizations(parser.getOptionValue(disableOptimizationsOpt) != null);
 			htmlCompressor.setYuiJsLineBreak(lineBreakPos);
@@ -315,6 +317,7 @@ public class CmdLineCompressor {
 				+ " --preserve-intertag-spaces Preserve intertag spaces\n"
 				+ " --preserve-line-breaks     Preserve line breaks\n"
 				+ " --preserve-multi-spaces    Preserve multiple spaces\n"
+				+ " --preserve-quotes          Preserve unneeded quotes\n"
 				+ "\n"
 				+ "JavaScript Compression Options:\n"
 				+ " --disable-optimizations    Disable all micro optimizations\n"
