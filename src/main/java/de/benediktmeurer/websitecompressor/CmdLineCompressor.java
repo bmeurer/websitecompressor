@@ -141,10 +141,6 @@ public class CmdLineCompressor {
 		System.exit(0);
 	}
 	
-	private static interface Compressor {
-		public String compress(String input) throws IOException;
-	};
-	
 	private static class CompressorCss implements Compressor {
 		public String compress(String input) throws IOException {
 			CssCompressor cssCompressor = new CssCompressor(new StringReader(input));
