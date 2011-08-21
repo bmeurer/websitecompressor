@@ -10,7 +10,7 @@
   <!-- ================= -->
   <!-- Basic Information -->
   <!-- ================= -->
-  <version>0.2</version>
+  <version>0.3-SNAPSHOT</version>
   <artifactId>websitecompressor</artifactId>
   <groupId>de.benediktmeurer.websitecompressor</groupId>
   <packaging>jar</packaging>
