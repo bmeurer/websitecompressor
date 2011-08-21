@@ -96,7 +96,7 @@
               <mainClass>de.benediktmeurer.websitecompressor.CmdLineCompressor</mainClass>
             </manifest>
             <manifestEntries>
-              <Class-Path>htmlcompressor-1.4.jar htmlcompressor-1.5.jar htmlcompressor-1.6.jar htmlcompressor-1.7.jar htmlcompressor-1.8.jar htmlcompressor-1.9.jar htmlcompressor.jar yuicompressor-2.4.2.jar yuicompressor-2.4.3.jar yuicompressor-2.4.4.jar yuicompressor-2.4.5.jar yuicompressor-2.4.6.jar yuicompressor-2.4.7.jar yuicompressor-2.4.8.jar yuicompressor-2.4.9.jar yuicompressor.jar</Class-Path>
+              <Class-Path>htmlcompressor-1.4.jar htmlcompressor-1.4.3.jar htmlcompressor-1.5.jar htmlcompressor-1.6.jar htmlcompressor-1.7.jar htmlcompressor-1.8.jar htmlcompressor-1.9.jar htmlcompressor.jar yuicompressor-2.4.2.jar yuicompressor-2.4.3.jar yuicompressor-2.4.4.jar yuicompressor-2.4.5.jar yuicompressor-2.4.6.jar yuicompressor-2.4.7.jar yuicompressor-2.4.8.jar yuicompressor-2.4.9.jar yuicompressor.jar</Class-Path>
             </manifestEntries>
           </archive>
         </configuration>
