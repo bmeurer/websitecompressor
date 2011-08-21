@@ -124,9 +124,9 @@ public class CmdLineCompressor {
 		}
 		catch (NoClassDefFoundError e) {
 			System.err.println(""
-					+ "ERROR: The additional jar files called htmlcompressor-1.4.jar and\n"
-					+ "yuicompressor-2.4.6.jar must be present in the same directory as\n"
-					+ "the websitecompressor jar file.");
+					+ "ERROR: The additional jar files called htmlcompressor-1.4.3.jar\n"
+					+ "and yuicompressor-2.4.6.jar must be present in the same directory\n"
+					+ "as the websitecompressor jar file.");
 			System.exit(1);
 		}
 		catch (CmdLineParser.OptionException e) {
