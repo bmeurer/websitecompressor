@@ -1,13 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-  <name>websitecompressor</name>
-  <comment>WebsiteCompressor is a small, fast and very easy to use Java utility that minifies a whole website, with all CSS, HTML, JavaScript and XML files by removing extra whitespaces, comments and other unneeded characters without breaking the content structure. As a result the pages become smaller in size and load faster. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
-  <projects/>
-  <buildSpec>
-    <buildCommand>
-      <name>org.eclipse.jdt.core.javabuilder</name>
-    </buildCommand>
-  </buildSpec>
-  <natures>
-    <nature>org.eclipse.jdt.core.javanature</nature>
-  </natures>
+	<name>websitecompressor</name>
+	<comment>WebsiteCompressor is a small, fast and very easy to use Java utility that minifies a whole website, with all CSS, HTML, JavaScript and XML files by removing extra whitespaces, comments and other unneeded characters without breaking the content structure. As a result the pages become smaller in size and load faster. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
 </projectDescription>
